@@ -33,3 +33,66 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+
+.main-images{
+
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+
+
+
+
+#troll-horse-image{
+
+    height: 250px;
+    width: 250px;
+    border-radius: 120px;
+    display: none;
+}
+
+#troll-horse-image.active{
+
+    display:block;
+    position:fixed;
+    animation-duration: 5s;
+    animation-name: trollAnimation;
+    opacity: 0;
+
+}
+
+@keyframes trollAnimation{
+
+    from{
+
+       opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 0.5;
+    }
+
+    to{
+
+       opacity: 1;
+    }
+
+}
+
+
+
+span{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    font-weight: bold;
+
+
+}
